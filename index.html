@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ========================================== -->
+    <!-- Metadatos esenciales -->
+    <!-- ========================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Crowdfunding</title>
+
+    <!-- Enlaces a hojas de estilo principales -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/public/home.css">
+
+    <!-- Ícono del sitio (favicon) -->
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+
+<body>
+    <!-- ========================================== -->
+    <!-- HEADER (Barra superior de navegación) -->
+    <!-- ========================================== -->
+    <header class="main-header">
+        <div class="container header-container">
+            <!-- Logo o nombre de la plataforma -->
+            <h1 class="logo">Plataforma de Crowdfunding</h1>
+
+            <!-- Navegación principal (público general) -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="explorar.html">Proyectos</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botones de autenticación -->
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline">Iniciar Sesión</a>
+                <a href="registro.html" class="btn btn-primary">Registro</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- SECCIÓN HERO (Presentación principal) -->
+    <!-- ========================================== -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <h2>Transforma Ideas en Realidad</h2>
+            <p>Conecta innovadores con personas que creen en el cambio positivo.</p>
+
+            <!-- Botones de acción principales -->
+            <div class="hero-buttons">
+                <a href="explorar.html" class="btn btn-primary">Explorar Proyectos</a>
+                <a href="usuario/crear-proyecto.html" class="btn btn-secondary">Crear Proyecto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECCIÓN: Cómo Funciona -->
+    <!-- ========================================== -->
+    <section class="how-it-works">
+        <div class="container">
+            <h3>¿Cómo Funciona?</h3>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span class="step-number">1</span>
+                    <h4>Crea tu Proyecto</h4>
+                    <p>Completa los detalles de tu iniciativa para comenzar a recaudar fondos.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">2</span>
+                    <h4>Inspira y Atrae Apoyo</h4>
+                    <p>Comparte tu historia y motiva a otros a contribuir con tu causa.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">3</span>
+                    <h4>Hazlo Realidad</h4>
+                    <p>Utiliza los fondos recaudados para hacer crecer tu proyecto y generar impacto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECCIÓN: Categorías -->
+    <!-- ========================================== -->
+    <section class="categories-section">
+        <div class="container">
+            <h3>Categorías de Proyectos</h3>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <h4>Educación</h4>
+                    <p>Proyectos educativos y de formación.</p>
+                </div>
+                <div class="category-card">
+                    <h4>Tecnología</h4>
+                    <p>Innovaciones tecnológicas y sostenibles.</p>
+                </div>
+                <div class="category-card">
+                    <h4>Arte y Cultura</h4>
+                    <p>Iniciativas artísticas y culturales.</p>
+                </div>
+                <div class="category-card">
+                    <h4>Comunidad</h4>
+                    <p>Proyectos sociales y de impacto comunitario.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECCIÓN: Proyectos Destacados -->
+    <!-- ========================================== -->
+    <section class="featured-projects">
+        <div class="container">
+            <h3>Proyectos Destacados</h3>
+            <div class="projects-grid">
+                <!-- Ejemplo de tarjeta de proyecto -->
+                <article class="project-card">
+                    <h4>Proyecto Educativo Comunitario</h4>
+                    <p>Desarrollo de espacios educativos modernos en comunidades rurales.</p>
+                    <p class="goal">Meta: $50,000</p>
+                    <p class="raised">Recaudado: $32,000</p>
+
+                    <!-- Barra de progreso -->
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 64%;"></div>
+                    </div>
+
+                    <!-- Botón de acción -->
+                    <a href="proyecto.html" class="btn btn-primary">Ver Proyecto</a>
+                </article>
+
+                <article class="project-card">
+                    <h4>Tecnología Verde - Paneles Solares</h4>
+                    <p>Implementación de paneles solares para comunidades rurales.</p>
+                    <p class="goal">Meta: $75,000</p>
+                    <p class="raised">Recaudado: $45,000</p>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+
+                    <a href="proyecto.html" class="btn btn-primary">Ver Proyecto</a>
+                </article>
+
+                <article class="project-card">
+                    <h4>Proyecto Cultural Urbano</h4>
+                    <p>Restauración de murales históricos en el centro de la ciudad.</p>
+                    <p class="goal">Meta: $30,000</p>
+                    <p class="raised">Recaudado: $15,000</p>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+
+                    <a href="proyecto.html" class="btn btn-primary">Ver Proyecto</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECCIÓN: Preguntas Frecuentes -->
+    <!-- ========================================== -->
+    <section class="faq-section">
+        <div class="container">
+            <h3>Preguntas Frecuentes</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>¿Cómo creo un proyecto?</h4>
+                    <p>Regístrate, completa los datos de tu idea y súbela para revisión.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Qué pasa si no alcanzo mi meta?</h4>
+                    <p>Podrás comunicarte con tus patrocinadores y decidir si reestructurar tu campaña.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Cómo apoyo un proyecto?</h4>
+                    <p>Puedes donar de forma segura mediante tarjeta, PayPal o transferencia.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Qué es una plataforma de crowdfunding?</h4>
+                    <p>Es un espacio digital que conecta a creadores de ideas con personas que desean financiarlas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER -->
+    <!-- ========================================== -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Plataforma de Crowdfunding. Todos los derechos reservados.</p>
+            <nav class="footer-nav">
+                <a href="#">Términos</a> |
+                <a href="#">Privacidad</a> |
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- Script principal de la aplicación -->
+    <!-- ========================================== -->
+    <script src="assets/js/core/app.js"></script>
+</body>
+</html>

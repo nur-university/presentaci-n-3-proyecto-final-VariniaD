@@ -1,0 +1,105 @@
+/* =============================================== */
+/* LAYOUT.CSS — Estructura general del sitio       */
+/* =============================================== */
+
+/* ---------------------------- */
+/* HEADER                      */
+/* ---------------------------- */
+.main-header {
+    background-color: var(--color-fondo);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primario);
+}
+
+/* Navegación principal */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    font-weight: 500;
+    color: var(--color-texto);
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: var(--color-primario);
+    color: #fff;
+}
+
+/* Botones de login / registro */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* ---------------------------- */
+/* SECCIÓN HERO                 */
+/* ---------------------------- */
+.hero-section {
+    background: linear-gradient(to right, var(--color-primario), var(--color-secundario));
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ---------------------------- */
+/* FOOTER                       */
+/* ---------------------------- */
+.main-footer {
+    background-color: var(--color-footer);
+    color: #ccc;
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 60px;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin: 0 5px;
+}
+
+.footer-nav a:hover {
+    color: var(--color-primario);
+}

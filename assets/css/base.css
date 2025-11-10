@@ -1,0 +1,123 @@
+/* =============================================== */
+/* BASE.CSS — Estilos fundamentales y variables    */
+/* =============================================== */
+
+/* ---------------------------- */
+/* 1️⃣ Reset básico de estilos  */
+/* ---------------------------- */
+/* Elimina márgenes y paddings por defecto para tener control total */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Define el comportamiento del scroll (más fluido) */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fuente global y color base del texto */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f8f9fa; /* Fondo general claro */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* ---------------------------- */
+/* 2️⃣ Variables globales       */
+/* ---------------------------- */
+/* Esto facilita cambiar el estilo general desde un solo lugar */
+:root {
+    --color-primario: #007BFF;       /* Azul principal */
+    --color-secundario: #6c63ff;     /* Morado suave */
+    --color-acento: #28a745;         /* Verde para éxito */
+    --color-texto: #333333;
+    --color-fondo: #ffffff;
+    --color-gris: #e0e0e0;
+    --color-footer: #222;
+
+    --max-width: 1200px;             /* Ancho máximo del contenido */
+    --border-radius: 8px;            /* Bordes redondeados suaves */
+    --transition: 0.3s ease;         /* Transición global suave */
+}
+
+/* ---------------------------- */
+/* 3️⃣ Tipografía general        */
+/* ---------------------------- */
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.2rem; }
+
+p {
+    margin-bottom: 1rem;
+    color: var(--color-texto);
+}
+
+/* ---------------------------- */
+/* 4️⃣ Enlaces y botones base   */
+/* ---------------------------- */
+a {
+    text-decoration: none;
+    color: var(--color-primario);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-secundario);
+}
+
+/* Botones generales */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+/* Tipos de botón según jerarquía */
+.btn-primary {
+    background-color: var(--color-primario);
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: var(--color-secundario);
+    color: #fff;
+}
+.btn-secondary:hover {
+    background-color: #574bdb;
+}
+
+.btn-outline {
+    border: 2px solid var(--color-primario);
+    color: var(--color-primario);
+    background: transparent;
+}
+.btn-outline:hover {
+    background-color: var(--color-primario);
+    color: #fff;
+}
+
+/* ---------------------------- */
+/* 5️⃣ Contenedor global        */
+/* ---------------------------- */
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
